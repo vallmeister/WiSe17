@@ -13,7 +13,6 @@ public class Aufgabe013 {
     System.out.println("t := time.\nDefine t.");
     long time = scanner.nextLong();
     long maxOperations = time * frequence;
-
     double result = nLog2n(maxOperations);
     System.out.println("Result:\n" + (long) result);
     scanner.close();
