@@ -7,7 +7,6 @@ import java.util.Scanner;
 public class Aufgabe013 {
   public static void main(String[] args) {
     Scanner scanner = new Scanner(System.in);
-
     System.out.println("f := frequence, number of operations per second.\nDefine f.");
     long frequence = scanner.nextLong();
     System.out.println("t := time.\nDefine t.");
