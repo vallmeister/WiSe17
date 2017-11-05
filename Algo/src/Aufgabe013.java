@@ -9,6 +9,7 @@ public class Aufgabe013 {
     Scanner scanner = new Scanner(System.in);
     System.out.println("f := frequence, number of operations per second.\nDefine f.");
     long frequence = scanner.nextLong();
+    frequence *= 1000000000;
     System.out.println("t := time.\nDefine t.");
     long time = scanner.nextLong();
     long maxOperations = time * frequence;
