@@ -1,10 +1,16 @@
 import java.util.Scanner;
 
 /**
- * This algorithm is supposed to calculate the values of sheet 1 exercise 3, because I need a special calculator and
- * I don't have it. Nevertheless, I decided to program my own function I need for this task in Java.
+ * This algorithm is supposed to calculate the values of sheet 1 exercise 3, because I need a
+ * special calculator and I don't have it. Nevertheless, I decided to program my own function I need
+ * for this task in Java.
  */
 public class Aufgabe013 {
+
+  /**
+   * main scans parameters and returns solution.
+   * @param args no arguments needed.
+   */
   public static void main(String[] args) {
     Scanner scanner = new Scanner(System.in);
     System.out.println("f := frequence, number of operations per second.\nDefine f.");
@@ -20,7 +26,7 @@ public class Aufgabe013 {
 
   /**
    * This function solves n * log(n) = f * t with bisection.
-   * @param operations, the number of operations per second
+   * @param operations the number of operations per second.
    * @return n := result.
    */
   private static double nLog2n(long operations) {
@@ -30,17 +36,17 @@ public class Aufgabe013 {
     double result;
 
     do {
-      if(bisection * Math.log10(bisection) / Math.log10(2.0d) == operations) {
+      if (bisection * Math.log10(bisection) / Math.log10(2.0d) == operations) {
         result = bisection;
         break;
-      } else if(bisection * Math.log10(bisection) / Math.log10(2.0d) > operations) {
+      } else if (bisection * Math.log10(bisection) / Math.log10(2.0d) > operations) {
         upperLimit = bisection;
         bisection = (upperLimit + lowerLimit) / 2;
-      } else if(bisection * Math.log10(bisection) / Math.log10(2.0d) < operations) {
+      } else if (bisection * Math.log10(bisection) / Math.log10(2.0d) < operations) {
         lowerLimit = bisection;
         bisection = (lowerLimit + upperLimit) / 2;
       }
-    } while(true);
+    } while (true);
     return result;
   }
 }
