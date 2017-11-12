@@ -5,7 +5,7 @@ import java.io.InputStreamReader;
 /**
  * Created by Christian Valenti.
  */
-class Aufgabe025 {
+class MarathonMovement {
 
   /**
    * This class is for the marathon task in spox. It counts the amount of overtakings.
