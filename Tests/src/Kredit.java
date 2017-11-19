@@ -4,6 +4,7 @@ public class Kredit {
    * Johannes task
    * @param args no needed.
    */
+
   public static void main(String[] args) {
     int loan = 10000;
     double interests = 10;
