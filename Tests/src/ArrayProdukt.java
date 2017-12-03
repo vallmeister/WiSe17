@@ -12,7 +12,7 @@ public class ArrayProdukt {
   }
 
   /**
-   * getting the products
+   * getting the product.
    */
   private static int[] produkte() {
     int[] result = new int[array1.length];
