@@ -2,168 +2,163 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
+/**
+ * task 5 from Spox, author Christian Valenti.
+ */
 class WoSteigtDieParty {  // In meiner Hose
 
   /**
-   * Author: Christian Valenti. Sheet 5 Spox
+   * main method for application.
    * @param args no arguments needed.
    */
   public static void main(String[] args) {
     BufferedReader buffrd;
-    String[] input; // to read and split the input-strings
-    int streets;  // amount of streets for (n,n)-matrix
-    int friends;  // amount of friends who wanna visit the party
-    int[][] friendsHomes; // array to save the friends' addresses
+    String[] input; // first line for streets and friends
+    int streets;  // amount streets of squarecity
+    int friends;  // amount of friends
+    int[][] friendsCoordinates; // coordinates of friends' homes
 
     // read input
     try {
       buffrd = new BufferedReader(new InputStreamReader(System.in));
-      input = buffrd.readLine().split(" ");
+      input = buffrd.readLine().split(" ");  // first line
       streets = Integer.parseInt(input[0]);
       friends = Integer.parseInt(input[1]);
-      friendsHomes = new int[2][friends]; // initializing friend-table (2, friends) - matrix
+      friendsCoordinates = new int[2][friends];
 
-      // saving addresses
+      // get friends' positions
       for (int i = 0; i < friends; ++i) {
         input = buffrd.readLine().split(" ");
-        friendsHomes[0][i] = Integer.parseInt(input[0]);
-        friendsHomes[1][i] = Integer.parseInt(input[1]);
+        friendsCoordinates[0][i] = Integer.parseInt(input[0]);
+        friendsCoordinates[1][i] = Integer.parseInt(input[1]);
       }
 
-      // getting the area in which all friends live
-      int minimumX = streets;
-      int maximumX = 0;
-      int minimumY = streets;
-      int maximumY = 0;
 
-      // getting minimum and maximum x
-      for (int i = 0; i < friends; ++i) {
-        if (minimumX > friendsHomes[0][i]) { // finding the minimum position x
-          minimumX = friendsHomes[0][i];
-        }
-        if (maximumX < friendsHomes[0][i]) {
-          maximumX = friendsHomes[0][i];
-        }
-      }
 
-      // getting minimum and maximum y
-      for (int i = 0; i < friends; ++i) {
-        if (minimumY > friendsHomes[1][i]) {
-          minimumY = friendsHomes[1][i];
-        }
-        if (maximumY < friendsHomes[1][i]) {
-          maximumY = friendsHomes[1][i];
-        }
-      }
+      /* get area where friends live
+      int maxX = getMaximum(friendsCoordinates[0]);
+      int minX = getMinimum(friendsCoordinates[0]);
+      int maxY = getMaximum(friendsCoordinates[1]);
+      int minY = getMinimum(friendsCoordinates[1]);
 
-      // simulating the area
-      int xSize = maximumX - minimumX;
-      int ySize = maximumY - minimumY;
-      int[][] friendsArea = new int[xSize][ySize];  // array of the friends' district
+      //int[] checkPoint = getPositions(streets, friendsCoordinates, minX, maxX, minY, maxY);
+      //System.out.println(checkPoint[1] + " " + checkPoint[2]);
 
-      // getting average positions
-      /*int averageX = getAverage(friendsHomes[0]);
-      int averageY = getAverage(friendsHomes[1]);
-
-      // getting distances
-      int[] distances = new int[4];
-      int positionInDistances = 0;
-      for (int i = 0; i < 2; ++i) {
-        for (int j = 0; j < 2; ++j) {
-          distances[positionInDistances] = getDistance(friendsHomes, averageX + i,
-              averageY + j);
-          ++i;
-        }
-      }*/
-      int[] distances = new int[xSize * ySize];
-      int countPositioninDistances = 0;
-      for (int i = 0; i < xSize; ++i) {
-        for (int j = 0; j < ySize; ++j) {
-          distances[countPositioninDistances] = getDistance(friendsHomes, i + minimumX,
-              j + minimumY);
-          countPositioninDistances++;
-        }
-      }
-
-      // output
-      try {
-        /*int minimumDistance = getMinimum(distances);
-        for (int i = 0; i < 4; ++i) {
-          if (minimumDistance == distances[i]) {
-            switch (i) {
-              case 0:
-                System.out.println(averageX  + " " + averageY );
-                break;
-              case 1:
-                System.out.println(averageX + " " + (averageY + 1));
-                break;
-              case 2:
-                System.out.println((averageX + 1) + " " + averageY );
-                break;
-              case 3:
-                System.out.println(averageX + 1 + " " + (averageY + 1));
-                break;
-            }
-          }
-        }*/
-        int minimumDistance = getMinimum(distances);
-        for (int i = 0; i < distances.length; ++i) {
-          if (distances[i] == minimumDistance) {
-            int xPosition = i % xSize;
-            int yPosition = i / ySize;
-            System.out.println(xPosition + " " + yPosition);
+      int minDistance = 3 * streets;
+      int checkpoint1 = 0;
+      int checkpoint2 = 0;
+      for (int i = 1; i < 2001; ++i) {
+        for (int j = 1; j < 2001; ++j) {
+          int distance = getDistance(friendsCoordinates, i, j);
+          if (minDistance > distance) {
+            minDistance = distance;
+            checkpoint1 = i;
+            checkpoint2 = j;
           }
         }
-      }catch (IndexOutOfBoundsException noFriends) {
-        System.out.println("Error: You have no friends.");
       }
-    } catch (IOException noStream) {
-      noStream.printStackTrace();
+      System.out.println(checkpoint1 + " " + checkpoint2);*/
+      int[] solution = {1, 1, getDistance(friendsCoordinates, 1, 1)};  // x, y, distance
+      long currentDistance = solution[2];
+      long minDistance = currentDistance;
+      int countx = 1;
+      int county = 1;
+      while (!(countx == 2000 && county == 2000)) {
+        countx++;
+        if (countx > 2000) {
+          countx = 1;
+          county++;
+        }
+        currentDistance += 2 * (countx * county - 1) - friends;
+        if (currentDistance < minDistance) {
+          minDistance = currentDistance;
+          solution[0] = countx;
+          solution[1] = county;
+        }
+      }
+      System.out.println(solution[0] + " " + solution[1] + " " + minDistance);
+    } catch (IOException missingStream) {
+      missingStream.printStackTrace();
     }
   }
 
   /**
-   * function to get an average of given numbers.
-   * @param numbers int array with numbers.
-   * @return the average of these numbers.
+   * Getting the minimum of a given set.
+   * @param set integer-array
+   * @return minimum integer of set
    */
-  private static int getAverage(int[] numbers) {
-    int sum = 0;
-    for (int i = 0; i < numbers.length; ++i) {
-      sum += numbers[i];
+  private static int getMinimum(int[] set) {
+    int minimum = set[0];
+    for (int i = 1; i < set.length; ++i) {
+      if (minimum > set[i]) {
+        minimum = set[i];
+      }
     }
-    return (sum / numbers.length);
+    return minimum;
   }
 
   /**
-   * function to get the distance between points
-   * @param points array of points to be tested.
-   * @param positionX x-position to compare
-   * @param positionY y-position to compare
-   * @return the sum of all distances between the points in array and x-y-point
+   * Getting the maximum of given set.
+   * @param set integer-array
+   * @return maximum integer of set
    */
-  private static int getDistance(int[][] points, int positionX, int positionY) {
-    int friends = points[0].length;
+  private static int getMaximum(int[] set) {
+    int maximum = set[0];
+    for (int i = 1; i < set.length; ++i) {
+      if (maximum < set[i]) {
+        maximum = set[i];
+      }
+    }
+    return maximum;
+  }
+
+  /**
+   * Getting the position to solve the problem.
+   * @param streets amount of streets in squarecity
+   * @param coordinates coordinates to check
+   * @param minX start position in x-direction
+   * @param maxX stop position ""
+   * @param minY start position "" y ""
+   * @param maxY stop "" "" ""
+   * @return integer array with 2 ints, first is the x-coordinate and second is the y-coordinate
+   */
+  private static int[] getPositions(int streets, int[][] coordinates, int minX, int maxX, int minY,
+      int maxY) {
+    int[] minDistance = {3 * streets, - 1, - 1};  // integer array to save the x, y and the distance
+    for (int i = minY; i <= maxY; ++i) {  // going through the city in x-Direction
+      for (int j = maxX; j >= minX; --j) {  // going through the city in y-Direction
+        int distance = getDistance(coordinates, i, j);
+        if (minDistance[0] > distance) {
+          minDistance[1] = i;
+          minDistance[2] = j;
+          minDistance[0] = distance;
+        }
+      }
+    }
+    return minDistance;
+  }
+
+  /**
+   * Getting the sum of all distances between a given point and several other points.
+   * @param coordinates integer array with given points to check
+   * @param xPos the x-position
+   * @param yPos y-position
+   * @return the whole distance between (x,y) and all coordinates
+   */
+  private static int getDistance(int[][] coordinates, int xPos, int yPos) {
     int distance = 0;
-    for (int i = 0; i < friends; ++i) {
-      distance += (Math.abs(points[0][i] - positionX) + Math.abs(points[1][i] - positionY));
+    for (int i = 0; i < coordinates[0].length; ++i) {
+      distance += (Math.abs(coordinates[0][i] - xPos) + Math.abs(coordinates[1][i] - yPos));
     }
     return distance;
   }
 
-  /**
-   * function to find the smallest element of a set.
-   * @param elements array of the set
-   * @return the minimum of this set
-   * @throws IndexOutOfBoundsException if set is empty
-   */
-  private static int getMinimum(int[] elements) throws IndexOutOfBoundsException{
-    int minimum = elements[0];
-    for (int i = 1; i < elements.length; ++i) {
-      if (minimum < elements[i]) {
-        minimum = elements[i];
-      }
+  private static int getAverage(int[] set) {
+    int elements = set.length;
+    int sum = 0;
+    for (int i = 0; i < elements; ++i) {
+      sum += set[i];
     }
-    return minimum;
+    return sum / elements;
   }
 }
