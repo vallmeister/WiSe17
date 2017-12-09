@@ -4,4 +4,4 @@
 
 | Date       | Start | Finish | Duration | Description                                         |
 |------------|-------|--------|----------|-----------------------------------------------------|
-| 2017-12-09 | 23:30 | 00:20  | 00:50    | Working book "Java - der Grundkurs" chapter 2 - 2.4 |
+| 2017-12-09 | 23:30 | 00:20  | 00:50 h  | Working book "Java - der Grundkurs" chapter 2 - 2.4 |
