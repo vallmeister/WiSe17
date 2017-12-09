@@ -7,14 +7,14 @@ public class ArrayProdukt {
    * task for Hummler.
    */
   public static void main(String[] args) {
-    int[] result = produkte();
+    int[] result = product();
     System.out.println(Arrays.toString(result));
   }
 
   /**
    * getting the product.
    */
-  private static int[] produkte() {
+  private static int[] product() {
     int[] result = new int[array1.length];
     for (int i = 0; i < array1.length; ++i) {
       int product = 1;
