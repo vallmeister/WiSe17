@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Algo/Algo.iml" filepath="$PROJECT_DIR$/Algo/Algo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/AlgorithmenDatenstrukturen/AlgorithmenDatenstrukturen.iml" filepath="$PROJECT_DIR$/AlgorithmenDatenstrukturen/AlgorithmenDatenstrukturen.iml" />
       <module fileurl="file://$PROJECT_DIR$/Tests/Tests.iml" filepath="$PROJECT_DIR$/Tests/Tests.iml" />
       <module fileurl="file://$PROJECT_DIR$/socket-workshop/socket-workshop.iml" filepath="$PROJECT_DIR$/socket-workshop/socket-workshop.iml" />
     </modules>
