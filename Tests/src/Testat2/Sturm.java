@@ -43,8 +43,10 @@ public class Sturm {
    * @param speedkm the speed in kilometers per hour
    * @return the beaufortvalue
    */
-  public static int beaufortwert(double speedkm) {
-    return (int) Math.round(Math.pow(speedkm / 3.01, 2 / 3));
+  public static long beaufortwert(double speedkm) {
+    double twoThirds = 2;
+    twoThirds /= 3;
+    return Math.round(Math.pow(speedkm / 3.01, twoThirds));
   }
 
   /**
