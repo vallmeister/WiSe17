@@ -2,20 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="60905bd6-9161-454a-bc68-5873db8b0d8e" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/checkstyle-idea.xml" afterPath="$PROJECT_DIR$/.idea/checkstyle-idea.xml" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/PvS.iml" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AlgorithmenDatenstrukturen/AlgorithmenDatenstrukturen.iml" afterPath="$PROJECT_DIR$/AlgorithmenDatenstrukturen/AlgorithmenDatenstrukturen.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AlgorithmenDatenstrukturen/src/Aufgabe013.java" afterPath="$PROJECT_DIR$/AlgorithmenDatenstrukturen/src/Aufgabe013.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AlgorithmenDatenstrukturen/src/Aufgabe0134.java" afterPath="$PROJECT_DIR$/AlgorithmenDatenstrukturen/src/Aufgabe0134.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AlgorithmenDatenstrukturen/src/Datenbankhack.java" afterPath="$PROJECT_DIR$/AlgorithmenDatenstrukturen/src/Datenbankhack.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AlgorithmenDatenstrukturen/src/Dijkstra.java" afterPath="$PROJECT_DIR$/AlgorithmenDatenstrukturen/src/Dijkstra.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AlgorithmenDatenstrukturen/src/LifeUniverseEverything.java" afterPath="$PROJECT_DIR$/AlgorithmenDatenstrukturen/src/LifeUniverseEverything.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AlgorithmenDatenstrukturen/src/MarathonMovement.java" afterPath="$PROJECT_DIR$/AlgorithmenDatenstrukturen/src/MarathonMovement.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AlgorithmenDatenstrukturen/src/Suche.java" afterPath="$PROJECT_DIR$/AlgorithmenDatenstrukturen/src/Suche.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AlgorithmenDatenstrukturen/src/Taschengeld.java" afterPath="$PROJECT_DIR$/AlgorithmenDatenstrukturen/src/Taschengeld.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AlgorithmenDatenstrukturen/src/WoSteigtDieParty.java" afterPath="$PROJECT_DIR$/AlgorithmenDatenstrukturen/src/WoSteigtDieParty.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PvS/PvS.iml" afterPath="$PROJECT_DIR$/PvS/PvS.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Tests/Tests.iml" afterPath="$PROJECT_DIR$/Tests/Tests.iml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -30,7 +18,7 @@
       <file leaf-file-name="Dijkstra.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/AlgorithmenDatenstrukturen/src/Dijkstra.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-159">
+            <state relative-caret-position="374">
               <caret line="22" column="34" lean-forward="false" selection-start-line="22" selection-start-column="34" selection-end-line="22" selection-end-column="34" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -43,7 +31,7 @@
         <entry file="file://$PROJECT_DIR$/AlgorithmenDatenstrukturen/src/Aufgabe013.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="748">
-              <caret line="44" column="50" lean-forward="true" selection-start-line="44" selection-start-column="50" selection-end-line="44" selection-end-column="50" />
+              <caret line="44" column="50" lean-forward="false" selection-start-line="44" selection-start-column="50" selection-end-line="44" selection-end-column="50" />
               <folding />
             </state>
           </provider>
@@ -555,41 +543,12 @@
     </navigator>
     <panes>
       <pane id="Scratches" />
-      <pane id="AndroidView" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="WiSe17" type="b2602c69:ProjectViewProjectNode" />
               <item name="AlgorithmenDatenstrukturen" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="WiSe17" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AlgorithmenDatenstrukturen" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="WiSe17" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PvS" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="WiSe17" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PvS" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="WiSe17" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PvS" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Sheet01" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="WiSe17" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PvS" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Sheet01" type="462c0819:PsiDirectoryNode" />
-              <item name="api" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="WiSe17" type="b2602c69:ProjectViewProjectNode" />
@@ -608,6 +567,8 @@
           <select />
         </subPane>
       </pane>
+      <pane id="AndroidView" />
+      <pane id="Scope" />
       <pane id="PackagesPane">
         <subPane>
           <expand>
@@ -871,6 +832,10 @@
       <workItem from="1514894658793" duration="9098000" />
       <workItem from="1515003059668" duration="583000" />
       <workItem from="1515003680951" duration="328000" />
+      <workItem from="1515005425021" duration="20000" />
+      <workItem from="1515005447636" duration="25000" />
+      <workItem from="1515005491770" duration="49000" />
+      <workItem from="1515005634652" duration="638000" />
     </task>
     <task id="LOCAL-00001" summary="Suche task from SPOX">
       <created>1509294785779</created>
@@ -932,10 +897,11 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="40109000" />
+    <option name="totallyTimeSpent" value="40841000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -951,9 +917,8 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16302083" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16302083" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -966,6 +931,7 @@
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32873806" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1119,13 +1085,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/PvS/src/Sheet01/test/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="24" lean-forward="false" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/PvS/src/Sheet01/test/Main.java" />
     <entry file="file://F:/OneDrive/Informatik/Ba 2. Fachsemester/Programmierung von Systemen/src_Blatt01/de/uulm/in/pm/api/BirdOfPrey.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
@@ -1147,20 +1107,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/PvS/src/Sheet01/api/Flyable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/PvS/src/Sheet01/api/Ingestable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="26" lean-forward="false" selection-start-line="11" selection-start-column="26" selection-end-line="11" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/PvS/src/Sheet01/api/Flyable.java" />
+    <entry file="file://$PROJECT_DIR$/PvS/src/Sheet01/api/Ingestable.java" />
     <entry file="file://F:/OneDrive/Informatik/Ba 2. Fachsemester/Programmierung von Systemen/src_Blatt01/de/uulm/in/pm/api/Moveable.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
@@ -1168,13 +1116,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/PvS/src/Sheet01/api/Moveable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="21" lean-forward="false" selection-start-line="5" selection-start-column="21" selection-end-line="5" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/PvS/src/Sheet01/api/Moveable.java" />
     <entry file="file://F:/OneDrive/Informatik/Ba 2. Fachsemester/Programmierung von Systemen/src_Blatt01/de/uulm/in/pm/api/AbstractAnimal.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
@@ -1189,20 +1131,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/PvS/src/Sheet01/api/AbstractBird.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="34" column="0" lean-forward="true" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/PvS/src/Sheet01/api/Eagle.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="3" lean-forward="true" selection-start-line="11" selection-start-column="3" selection-end-line="11" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/PvS/src/Sheet01/api/AbstractBird.java" />
+    <entry file="file://$PROJECT_DIR$/PvS/src/Sheet01/api/Eagle.java" />
     <entry file="file://F:/OneDrive/Informatik/Ba 2. Fachsemester/Programmierung von Systemen/src_Blatt01/de/uulm/in/pm/api/Eagle.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="78">
@@ -1217,20 +1147,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/PvS/src/Sheet01/api/BirdOfPrey.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="21" lean-forward="true" selection-start-line="4" selection-start-column="21" selection-end-line="4" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/PvS/src/Sheet01/api/AbstractAnimal.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/PvS/src/Sheet01/api/BirdOfPrey.java" />
+    <entry file="file://$PROJECT_DIR$/PvS/src/Sheet01/api/AbstractAnimal.java" />
     <entry file="file://$PROJECT_DIR$/journal.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -1245,13 +1163,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="7" column="6" lean-forward="false" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/AlgorithmenDatenstrukturen/src/Dijkstra.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-159">
+        <state relative-caret-position="374">
           <caret line="22" column="34" lean-forward="false" selection-start-line="22" selection-start-column="34" selection-end-line="22" selection-end-column="34" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -1262,7 +1179,7 @@
     <entry file="file://$PROJECT_DIR$/AlgorithmenDatenstrukturen/src/Aufgabe013.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="748">
-          <caret line="44" column="50" lean-forward="true" selection-start-line="44" selection-start-column="50" selection-end-line="44" selection-end-column="50" />
+          <caret line="44" column="50" lean-forward="false" selection-start-line="44" selection-start-column="50" selection-end-line="44" selection-end-column="50" />
           <folding />
         </state>
       </provider>
@@ -1324,7 +1241,6 @@
             <option name="proportions">
               <list>
                 <option value="0.2" />
-                <option value="0.6" />
               </list>
             </option>
           </splitter-proportions>
