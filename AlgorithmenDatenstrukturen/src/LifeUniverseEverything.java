@@ -3,10 +3,10 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 
 /**
- * Created by cv7 on 17.10.2017.
- * Sheet 0 from Algorithms and Data-Structures for Spox
+ * Created by cv7 on 17.10.2017. Sheet 0 from Algorithms and Data-Structures for Spox
  */
 class LifeUniverseEverything {
+
   public static void main(String[] args) {
     BufferedReader br;
     String input;

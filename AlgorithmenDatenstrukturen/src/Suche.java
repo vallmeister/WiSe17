@@ -3,8 +3,10 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 
 class Suche {
+
   private static int maximum;
   private static int result;
+
   /**
    * Exercise 1.1 from SPOX in Algorithms.
    */
@@ -13,14 +15,14 @@ class Suche {
     BufferedReader buffReader;
     try {
       buffReader = new BufferedReader(new InputStreamReader(System.in));
-      if((input = buffReader.readLine()) != null) {
-        if(!analyze(input)) {
+      if ((input = buffReader.readLine()) != null) {
+        if (!analyze(input)) {
           System.err.println("undefined");
         } else {
           System.out.println(result);
         }
       }
-    } catch(IOException standardException) {
+    } catch (IOException standardException) {
       standardException.printStackTrace();
     }
   }
@@ -34,34 +36,34 @@ class Suche {
     boolean hasCharacter;
     int temp;
     String[] wordsToBeTested = toAnalyze.split(" ");
-    for(int i = 0; i < wordsToBeTested.length; ++i) {
+    for (int i = 0; i < wordsToBeTested.length; ++i) {
       hasCharacter = false;
-      for(int j = 0; j < wordsToBeTested[i].length(); ++j) {
-        if(((int) (wordsToBeTested[i].charAt(j))) >= 65) {
+      for (int j = 0; j < wordsToBeTested[i].length(); ++j) {
+        if (((int) (wordsToBeTested[i].charAt(j))) >= 65) {
           hasCharacter = true;
         }
       }
-      if(hasCharacter) {
+      if (hasCharacter) {
         continue;
       }
-      if(!hasMaximum) {
+      if (!hasMaximum) {
         maximum = Integer.parseInt(wordsToBeTested[i]);
         hasMaximum = true;
       } else {
-        if(!hasResult) {
+        if (!hasResult) {
           result = Integer.parseInt(wordsToBeTested[i]);
           hasResult = true;
-          if(result > maximum) {
+          if (result > maximum) {
             temp = maximum;
             maximum = result;
             result = temp;
           }
         } else {
           temp = Integer.parseInt(wordsToBeTested[i]);
-          if(temp > maximum) {
+          if (temp > maximum) {
             result = maximum;
             maximum = temp;
-          } else if(temp < maximum && temp > result) {
+          } else if (temp < maximum && temp > result) {
             result = temp;
           }
         }

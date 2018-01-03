@@ -1,14 +1,14 @@
 import java.util.Scanner;
 
 /**
- * This algorithm is supposed to calculate the values of sheet 1 exercise 3, because I need a
- * special calculator and I don't have it. Nevertheless, I decided to program my own function I need
- * for this task in Java.
+ * This algorithm is supposed to calculate the values of sheet 1 exercise 3, because I need a special calculator and I
+ * don't have it. Nevertheless, I decided to program my own function I need for this task in Java.
  */
 public class Aufgabe013 {
 
   /**
    * main scans parameters and returns solution.
+   *
    * @param args no arguments needed.
    */
   public static void main(String[] args) {
@@ -26,6 +26,7 @@ public class Aufgabe013 {
 
   /**
    * This function solves n * log(n) = f * t with bisection.
+   *
    * @param operations the number of operations per second.
    * @return n := result.
    */

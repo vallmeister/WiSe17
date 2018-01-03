@@ -9,6 +9,7 @@ class WoSteigtDieParty {  // In meiner Hose
 
   /**
    * main method for application.
+   *
    * @param args no arguments needed.
    */
   public static void main(String[] args) {
@@ -84,6 +85,7 @@ class WoSteigtDieParty {  // In meiner Hose
 
   /**
    * Getting the minimum of a given set.
+   *
    * @param set integer-array
    * @return minimum integer of set
    */
@@ -99,6 +101,7 @@ class WoSteigtDieParty {  // In meiner Hose
 
   /**
    * Getting the maximum of given set.
+   *
    * @param set integer-array
    * @return maximum integer of set
    */
@@ -114,6 +117,7 @@ class WoSteigtDieParty {  // In meiner Hose
 
   /**
    * Getting the position to solve the problem.
+   *
    * @param streets amount of streets in squarecity
    * @param coordinates coordinates to check
    * @param minX start position in x-direction
@@ -124,7 +128,7 @@ class WoSteigtDieParty {  // In meiner Hose
    */
   private static int[] getPositions(int streets, int[][] coordinates, int minX, int maxX, int minY,
       int maxY) {
-    int[] minDistance = {3 * streets, - 1, - 1};  // integer array to save the x, y and the distance
+    int[] minDistance = {3 * streets, -1, -1};  // integer array to save the x, y and the distance
     for (int i = minY; i <= maxY; ++i) {  // going through the city in x-Direction
       for (int j = maxX; j >= minX; --j) {  // going through the city in y-Direction
         int distance = getDistance(coordinates, i, j);
@@ -140,6 +144,7 @@ class WoSteigtDieParty {  // In meiner Hose
 
   /**
    * Getting the sum of all distances between a given point and several other points.
+   *
    * @param coordinates integer array with given points to check
    * @param xPos the x-position
    * @param yPos y-position

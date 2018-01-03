@@ -11,6 +11,7 @@ public class Dijkstra {
 
   /**
    * Main method.
+   *
    * @param args no args given.
    */
   public static void main(String[] args) {
@@ -60,6 +61,7 @@ public class Dijkstra {
 
   /**
    * Dijkstra's shortest path algorithm.
+   *
    * @param graph an int-array describing a graph due to adjacencies
    * @param startVertices starting vertices in the graph
    * @param destinationVertices destination in the graph

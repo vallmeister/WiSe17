@@ -6,10 +6,12 @@ import java.io.InputStreamReader;
  * Sheet 4 task 1. Christian Valenti.
  */
 class Datenbankhack {
+
   private static String output = "";
 
   /**
    * main method to read input from SPOX.
+   *
    * @param args no arguments.
    */
   public static void main(String[] args) {
@@ -54,13 +56,13 @@ class Datenbankhack {
 
     // initialise the hashtable
     for (int i = 0; i < hashtableSize; ++i) {
-      hashtable[i] = - 1;
+      hashtable[i] = -1;
     }
 
     // hashing
     for (int i = 0; i < keys.length; ++i) {
       int count = 0;
-      while (hashtable[(keys[i] + count) % hashtableSize] != - 1) {
+      while (hashtable[(keys[i] + count) % hashtableSize] != -1) {
         count++;
       }
       hashtable[(keys[i] + count) % hashtableSize] = keys[i];
@@ -75,7 +77,7 @@ class Datenbankhack {
 
     // initialise the hashtable
     for (int i = 0; i < hashtableSize; ++i) {
-      hashtable[i] = - 1;
+      hashtable[i] = -1;
     }
 
     // hashing
@@ -85,7 +87,7 @@ class Datenbankhack {
           != -1) {
         count++;
       }
-      hashtable[(keys[i] + count * (1 + (keys[i] % (hashtableSize - 1))))  % hashtableSize]
+      hashtable[(keys[i] + count * (1 + (keys[i] % (hashtableSize - 1)))) % hashtableSize]
           = keys[i];
       if (searchedKey == keys[i]) {
         output += ((keys[i] + count * (1 + (keys[i] % (hashtableSize - 1)))) % hashtableSize)

@@ -3,13 +3,13 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 
 /**
- * Christian Valenti 959042.
- * Algorithmen sheet 6 SPOX task.
+ * Christian Valenti 959042. Algorithmen sheet 6 SPOX task.
  */
 class Taschengeld {
 
   /**
    * main method of application.
+   *
    * @param args no arguments needed.
    */
   public static void main(String[] args) {

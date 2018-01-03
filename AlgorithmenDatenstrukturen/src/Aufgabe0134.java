@@ -1,6 +1,7 @@
 import java.util.Scanner;
 
 public class Aufgabe0134 {
+
   public static void main(String[] args) {
     Scanner scanner = new Scanner(System.in);
     System.out.println("f := frequence (*1.000.000.000)");
@@ -12,9 +13,9 @@ public class Aufgabe0134 {
   }
 
   private static long fac(long n, long m) {
-    if(n == 1) {
+    if (n == 1) {
       return m;
-    } else if(n == 0) {
+    } else if (n == 0) {
       return m;
     }
     return fac(n - 1, m * n);
@@ -25,10 +26,10 @@ public class Aufgabe0134 {
    */
   private static double bisection(long product) {
     long result = 0;
-    while(true) {
+    while (true) {
       long tmp = fac(result, 1);
       long tmp2 = fac(result + 1, 1);
-      if(tmp < product && tmp2 > product || tmp == product) {
+      if (tmp < product && tmp2 > product || tmp == product) {
         break;
       }
       ++result;

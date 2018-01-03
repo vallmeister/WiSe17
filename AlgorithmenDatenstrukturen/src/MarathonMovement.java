@@ -9,6 +9,7 @@ class MarathonMovement {
 
   /**
    * This class is for the marathon task in spox. It counts the amount of overtakings.
+   *
    * @param args is supposed to be empty.
    */
   public static void main(String[] args) {
@@ -48,6 +49,7 @@ class MarathonMovement {
 
   /**
    * Counting the inversions of 2 arrays.
+   *
    * @param start is int-array with start positions of runners.
    * @param finish is int-array with finish positions of runners.
    */
